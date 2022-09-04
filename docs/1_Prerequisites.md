@@ -113,4 +113,4 @@ _**Note:** If you are working on a Mac, you will need to Install Shell Commands 
 
 ![mona](https://user-images.githubusercontent.com/5396174/187010589-a9cbdd9f-f9eb-4e3b-bac0-4abeb8714e8d.png) 
 
-## Let's move to the [next issue](https://github.com/git-merge-workshops/docs/2_Brushing_Up_Git_Commands.md)
+## Let's move to the [next issue](2_Brushing_Up_Git_Commands.md)
