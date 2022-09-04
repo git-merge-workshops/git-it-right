@@ -38,3 +38,8 @@ If an operation will change a commit ID that has been pushed to the remote (also
 
 > **Warning**: Before you reverse the commit, it is a good idea to make sure you will not be inadvertently reversing other changes that were lumped into the same commit. To see what was changed in the commit, use `git show SHA`.
 
+## Congratulation. You are done with "Undoing git commit" section
+
+![mona](https://user-images.githubusercontent.com/5396174/187010589-a9cbdd9f-f9eb-4e3b-bac0-4abeb8714e8d.png) 
+
+## Let's move to the [next issue](4_Exercise_Undoing_Git_Commit.md)
