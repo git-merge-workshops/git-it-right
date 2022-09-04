@@ -10,8 +10,8 @@ Welcome. In this workshop, participants will learn the basics of common Git comm
 
 ## 🍿 Our navigation route
 1. [**Prerequisite check** - Before getting started, we want to make sure that everyone is ready to start](docs/1_Prerequisites.md)
-2. [**Warm up** - Brushing up on basic git commands](https://github.com/git-merge-workshops/git-it-right/issues/2)
-3. [**Undoing git commit** - Let's explore how git revert, git commit --amend, git soft reset, and git hard reset differ](https://github.com/git-merge-workshops/git-it-right/issues/3)
-4. [**Exercise 1** - Undoing git commit](https://github.com/git-merge-workshops/git-it-right/issues/4)
-5. [**Fun git Bisect** - Learn how to search bad commit](https://github.com/git-merge-workshops/git-it-right/issues/5)
-6. [**Exercise 2** - Git bisect exercise](https://github.com/git-merge-workshops/git-it-right/issues/6)
+2. [**Warm up** - Brushing up on basic git commands](docs/2_Brushing_Up_Git_Commands.md)
+3. [**Undoing git commit** - Let's explore how git revert, git commit --amend, git soft reset, and git hard reset differ](docs/3_Undoing_Git_Commit.md)
+4. [**Exercise 1** - Undoing git commit](docs/4_Exercise_Undoing_Git_Commit.md)
+5. [**Fun git Bisect** - Learn how to search bad commit](docs/5_Learn_Git_Bisect.md)
+6. [**Exercise 2** - Git bisect exercise](docs/6_Exercise_Git_Bisect.md)
