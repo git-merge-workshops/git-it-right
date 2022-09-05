@@ -1,8 +1,8 @@
-## Undoing commits
+## Learn how to undo git commits
 
 ![image](https://user-images.githubusercontent.com/5396174/169838055-e2ac5ba2-dd75-4c89-a13a-dfec0da8ccb6.png)
 
-In this section, we will learn about commands that re-write history and understand when you should or shouldn't use them.
+In this section and following sections, we will learn about different git commands that re-write history and understand when you should or shouldn't use them.
 
 ### How Commits Are Made
 
@@ -13,9 +13,7 @@ Every commit in Git is a unique snapshot of the project at that point in time. I
 - Commit date and time
 - Commit message
 
-
 Each commit also contains the commit ID of its parent commit.
-
 
 ### Safe Operations
 
@@ -27,14 +25,12 @@ If an operation will change a commit ID that has been pushed to the remote (also
 
 | Command | Cautions |
 | ------- | -------- |
-| `revert`  | Generally safe since it creates a new commit.|
-| `commit --amend` | Only use on local commits.
-| `reset` | Only use on local commits.
-| `cherry-pick` | Only use on local commits.
-| `rebase` | Only use on local commits.
+| `revert`  | Create a new commit |
+| `commit --amend` | Convenient way to modify the most recent commit |
+| `cherry-pick` | Pick a commit from one branch and apply on another branch |
+| `reset` | Reset your current head to a specified state |
 
-### Reverting a Commit
-
+In our next sections, we will go each topic in more deteail and learn by doing prepared exercises.
 
 > **Warning**: Before you reverse the commit, it is a good idea to make sure you will not be inadvertently reversing other changes that were lumped into the same commit. To see what was changed in the commit, use `git show SHA`.
 

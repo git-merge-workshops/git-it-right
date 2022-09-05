@@ -30,7 +30,7 @@ git push
 
 This diagram shows how a typical git workflow process will happen
 
-![image](https://media.github.ford.com/user/37856/files/3e84efce-0060-4e1f-be01-b7a1d2356608)
+![Git workflow process](https://user-images.githubusercontent.com/5396174/187011624-4f74b7a6-4783-4d72-a70a-f39f13aa0a24.png)
 
 Here, we will walk through how these Git commands from your dev machine are used to interact with GitHub
 
