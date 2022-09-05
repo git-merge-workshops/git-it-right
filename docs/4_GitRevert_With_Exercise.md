@@ -15,7 +15,14 @@ This will depend on your operating system.
 - **Mac OS/Linux**: Open up a Terminal window/shell window and make sure you are in a right directory (e.g. `pwd`). 
 - **Windows**: Open up **Git CLI** by clicking on bottom left Windows button and search for **Git CLI**. Make sure you are in a right directory. 
 
-Instructions after that should be same. Create a directory called `GitRevertDemo` with `mkdir GitRevertDemo`. Go inside the directory with `cd GitRevertDemo` command
+Instructions after that should be same. 
+
+```bash
+# Create a directory called `GitRevertDemo`
+mkdir GitRevertDemo
+# Go inside the directory
+cd GitRevertDemo
+```
 
 #### STEP 2: Create a new file to initialize git structure
 
@@ -84,7 +91,9 @@ ls -la
 
 Check the content of README.md. Try to add one new line change to `README.md` file. Then, run the following command to commit.
 
-`git add $README_FILE && git commit -m "Adding a new change"`
+```bash
+git add $README_FILE && git commit -m "Adding a new change"
+```
 
 If you type the following command, you should see the history of git.
 
