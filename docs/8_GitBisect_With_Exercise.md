@@ -19,8 +19,9 @@ Git bisect is an useful built-in tool within git cli that you lets you search a 
 5. If you found a result, enter `git bisect good`
 6. Lastly, type `git bisect reset` to terminate `git bisect`
 
-## Congratulation. You are done with "Fun Git Bisect" section
+
+## Congratulation. You are done with "Git Bisect with Exercise" section
 
 ![mona](https://user-images.githubusercontent.com/5396174/187010589-a9cbdd9f-f9eb-4e3b-bac0-4abeb8714e8d.png) 
 
-## Let's move to the [next issue](6_Exercise_Git_Bisect.md)
+## Let's move to the [next section](9_ExtraTopic_GitMigrate.md)

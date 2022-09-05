@@ -42,4 +42,4 @@ If an operation will change a commit ID that has been pushed to the remote (also
 
 ![mona](https://user-images.githubusercontent.com/5396174/187010589-a9cbdd9f-f9eb-4e3b-bac0-4abeb8714e8d.png) 
 
-## Let's move to the [next issue](4_Exercise_Undoing_Git_Commit.md)
+## Let's move to the [next section](4_GitRevert_With_Exercise.md)

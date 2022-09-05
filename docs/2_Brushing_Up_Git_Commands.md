@@ -63,6 +63,10 @@ git branch --all
 git branch -a
 ```
 
+## Seeing git history with git log
+
+You can use `git log` command to see history of your git commit. But you can also pass additional parameters to see detailed information! One useful command to visualize git is `git log --graph --all`. Try it!
+
 ## Congratulation. You are done with "Warmup - Brushing up on basic git commands" section
 
 ![mona](https://user-images.githubusercontent.com/5396174/187010589-a9cbdd9f-f9eb-4e3b-bac0-4abeb8714e8d.png) 
