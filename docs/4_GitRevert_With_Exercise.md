@@ -1,6 +1,6 @@
 ## Git Revert with Exercise
 
-![Git Revert](images/git-revert.jpg)
+![Git Revert](/docs/images/git-revert.jpg)
 
 Among different ways to undo our previous git commits, `git revert` is the safest way to do so. `git revert` does not actually overwrite the existing commit. Instead, `git revert` understands how to invert the changes introduced by the commit and appends a new commit with the inverted content. This operation is safe because it prevents git from losing git history.
 
