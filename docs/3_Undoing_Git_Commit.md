@@ -1,4 +1,4 @@
-# Learn different ways to undo or change git commits
+# Learn different ways to undo or to change git commits
 
 ![back2thefuture](https://user-images.githubusercontent.com/5396174/188551977-be6e5031-6e67-4d3a-b411-b0fb23dd4b0a.jpg)
 
