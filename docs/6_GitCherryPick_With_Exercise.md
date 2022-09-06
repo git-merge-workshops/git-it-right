@@ -88,4 +88,4 @@ git add $MAIN_JAVA && git commit -m "Closed Main.java"
 
 ![mona](https://user-images.githubusercontent.com/5396174/187010589-a9cbdd9f-f9eb-4e3b-bac0-4abeb8714e8d.png) 
 
-## Let's move to the [next section](7_GitReset_With_Exercise.md)
+## Let's move to the [next section](7_GitBase_And_Squash_With_Exercise.md)

@@ -24,17 +24,19 @@ mkdir GitRevertDemo
 cd GitRevertDemo
 ```
 
+> NOTE: You can continue to use a same directory and a same script for other continuing exercises. However, the idea is to allow users to pick up from any step that they want to review later without depending on other steps. In addition, it is always easy to work with a clean slate. 
+
 #### STEP 2: Create a new file to initialize git structure
 
-Create a new file called `generate-git-revert-scenario.sh`. You can do it with either by going inside a directory and create a file through a tool like **Visual Studio Code**. Or, you can use a tool like **VIM** to quickly create a file.
+Create a new file called `generate-git-single-branch.sh`. You can do it with either by going inside a directory and create a file through a tool like **Visual Studio Code**. Or, you can use a tool like **VIM** to quickly create a file.
 
 ```bash
-touch generate-git-revert-scenario.sh
-chmod +x generate-git-revert-scenario.sh
-vim generate-git-revert-scenario.sh
+touch generate-git-single-branch.sh
+chmod +x generate-git-single-branch.sh
+vim generate-git-single-branch.sh
 ```
 
-Then, paste the content of the file with lines below.
+Then, copy-and-paste the content of the file with lines below.
 
 ```bash
 #!/bin/bash
@@ -67,7 +69,7 @@ git add $README_FILE && git commit -m "Adding some description"
 
 # main branch - Adding some more description
 echo "" >> $README_FILE
-echo "**Git Merge** confernece is going to be awesome." >> $README_FILE
+echo "**Git Merge** conference is going to be awesome." >> $README_FILE
 echo "" >> $README_FILE
 
 git add $README_FILE && git commit -m "Adding some more description"
@@ -78,7 +80,7 @@ git add $README_FILE && git commit -m "Adding some more description"
 Run the following command to execute the script
 
 ```bash
-./generate-git-revert-scenario.sh
+./generate-git-single-branch
 ```
 
 Then, run the following command to check a new file called `README.md` and a `.git` directory got created.
