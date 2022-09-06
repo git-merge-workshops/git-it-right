@@ -8,6 +8,8 @@ Among different ways to undo our previous git commits, `git revert` is the safes
 
 We will go through a simple exercise to try to out `git revert`. As long as you have **Git CLI** installed in your computer, you don't need the internet connection.
 
+> NOTE: You can continue to use a same directory and a same script for other continuing exercises. However, the idea is to allow users to pick up from any step that they want to review later without depending on other steps. In addition, it is always easy to work with a clean slate. Because of this, you will see same or similar commands and instructions getting copied over multiple time.
+
 #### STEP 1: Create a directory and cd into it
 
 This will depend on your operating system. 
@@ -24,9 +26,9 @@ mkdir GitRevertDemo
 cd GitRevertDemo
 ```
 
-> NOTE: You can continue to use a same directory and a same script for other continuing exercises. However, the idea is to allow users to pick up from any step that they want to review later without depending on other steps. In addition, it is always easy to work with a clean slate. 
-
 #### STEP 2: Create a new file to initialize git structure
+
+> NOTE: Again, you can continue using this same file for other exercises. It is up to you how you want to manage this.
 
 Create a new file called `generate-git-single-branch.sh`. You can do it with either by going inside a directory and create a file through a tool like **Visual Studio Code**. Or, you can use a tool like **VIM** to quickly create a file.
 
