@@ -1,5 +1,7 @@
 # Git Cherry Pick  with Exercise
 
+![cherry-pick](https://user-images.githubusercontent.com/5396174/188551642-e1faf817-a6b4-49ee-aff0-5a50496821e1.jpg)
+
 **Cherry picking** allows you to pick up a commit from your reflog or another branch of your project and move it to your current branch. It is a very powerful command that allows a specific git commit from a reference and append to the current working HEAD.
 
 When will it be helpful to use cherry pick? Cherry pick can be useful for following scenarios:
