@@ -1,4 +1,4 @@
-## Git Reset with Exercise
+# Git Reset with Exercise
 
 ## Congratulation. You are done with "Git Reset with Exercise" section
 

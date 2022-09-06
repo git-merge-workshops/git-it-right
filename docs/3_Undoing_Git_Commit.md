@@ -1,10 +1,10 @@
-## Learn how to undo git commits
+# Learn different ways to undo or change git commits
 
 ![image](https://user-images.githubusercontent.com/5396174/169838055-e2ac5ba2-dd75-4c89-a13a-dfec0da8ccb6.png)
 
 In this section and following sections, we will learn about different git commands that re-write history and understand when you should or shouldn't use them.
 
-### How Commits Are Made
+## How Commits Are Made
 
 Every commit in Git is a unique snapshot of the project at that point in time. It contains the following information:
 
@@ -15,19 +15,20 @@ Every commit in Git is a unique snapshot of the project at that point in time. I
 
 Each commit also contains the commit ID of its parent commit.
 
-### Safe Operations
+## Safe Operations
 
 Git's data structure gives it integrity but its distributed nature also requires us to be aware of how certain operations will impact the commits that have already been shared.
 
 If an operation will change a commit ID that has been pushed to the remote (also known as a public commit), we must be careful in choosing the operations to perform.
 
-#### Guidelines for Common Commands
+### Guidelines for Common Commands
 
 | Command | Cautions |
 | ------- | -------- |
 | `revert`  | Create a new commit |
 | `commit --amend` | Convenient way to modify the most recent commit |
 | `cherry-pick` | Pick a commit from one branch and apply on another branch |
+| `rebase` and `squash` | Integrate changes from one branch to another |
 | `reset` | Reset your current head to a specified state |
 
 In our next sections, we will go each topic in more deteail and learn by doing prepared exercises.

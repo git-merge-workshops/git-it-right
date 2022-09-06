@@ -1,4 +1,4 @@
-## Git basic workflows 
+# Git basic workflows 
 
 Although you can work most changes within GitHub itself, it is highly recommended to get to know how git works by knowing some of most basic git workflow process. There are Git user interface tools for your desktop like GitHub Desktop, Git Kraken, but you can operate everything out from just git CLI. Here are few commands that are essential to know.
 

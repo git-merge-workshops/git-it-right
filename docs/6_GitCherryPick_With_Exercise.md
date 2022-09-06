@@ -1,4 +1,4 @@
-## Git Cherry Pick  with Exercise
+# Git Cherry Pick  with Exercise
 
 ```bash
 #!/bin/bash

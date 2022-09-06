@@ -1,16 +1,16 @@
-## Git Revert with Exercise
+# Git Revert with Exercise
 
 ![image](https://user-images.githubusercontent.com/5396174/188518491-665fffac-b863-4e2d-bde0-36f727f62c5f.png)
 
 Among different ways to undo our previous git commits, `git revert` is the safest way to do so. `git revert` does not actually overwrite the existing commit. Instead, `git revert` understands how to invert the changes introduced by the commit and appends a new commit with the inverted content. This operation is safe because it prevents git from losing git history.
 
-### Exercise - Git Revert
+## Exercise - Git Revert
 
 We will go through a simple exercise to try to out `git revert`. As long as you have **Git CLI** installed in your computer, you don't need the internet connection.
 
 > NOTE: You can continue to use a same directory and a same script for other continuing exercises. However, the idea is to allow users to pick up from any step that they want to review later without depending on other steps. In addition, it is always easy to work with a clean slate. Because of this, you will see same or similar commands and instructions getting copied over multiple time.
 
-#### STEP 1: Create a directory and cd into it
+### STEP 1: Create a directory and cd into it
 
 This will depend on your operating system. 
 
@@ -26,7 +26,7 @@ mkdir GitRevertDemo
 cd GitRevertDemo
 ```
 
-#### STEP 2: Create a new file to initialize git structure
+### STEP 2: Create a new file to initialize git structure
 
 > NOTE: Again, you can continue using this same file for other exercises. It is up to you how you want to manage this.
 
@@ -77,7 +77,7 @@ echo "" >> $README_FILE
 git add $README_FILE && git commit -m "Adding some more description"
 ```
 
-#### STEP 3: Execute the script to initialize git structure
+### STEP 3: Execute the script to initialize git structure
 
 Run the following command to execute the script
 

@@ -1,4 +1,4 @@
-## Git Commit Amend with Exercise
+# Git Commit Amend with Exercise
 
 In last section, you learned about a simplest posible way to undo a commit: `git revert`. In this section, you will learn about `git commit --amend`, which is a way to modify a previous commit in a case you want to change what already had happened. 
 
@@ -7,13 +7,13 @@ In last section, you learned about a simplest posible way to undo a commit: `git
 - Re-writing commit messages
 - Adding files to the commit
 
-### Exercise - Git Commit Amend
+## Exercise - Git Commit Amend
 
 We will go through a simple exercise to try to out `git commit --amend`. As long as you have **Git CLI** installed in your computer, you don't need the internet connection.
 
 > NOTE: You can continue to use a same directory and a same script for other continuing exercises. However, the idea is to allow users to pick up from any step that they want to review later without depending on other steps. In addition, it is always easy to work with a clean slate. Because of this, you will see same or similar commands and instructions getting copied over multiple time.
 
-#### STEP 1: Create a directory and cd into it
+### STEP 1: Create a directory and cd into it
 
 This will depend on your operating system. 
 
@@ -29,7 +29,7 @@ mkdir GitCommitAmendDemo
 cd GitCommitAmendDemo
 ```
 
-#### STEP 2: Create a new file to initialize git structure
+### STEP 2: Create a new file to initialize git structure
 
 > NOTE: Again, you can continue using this same file for other exercises. It is up to you how you want to manage this.
 
@@ -80,7 +80,7 @@ echo "" >> $README_FILE
 git add $README_FILE && git commit -m "Adding some more description"
 ```
 
-#### STEP 3: Execute the script to initialize git structure
+### STEP 3: Execute the script to initialize git structure
 
 Run the following command to execute the script
 
@@ -94,7 +94,7 @@ Then, run the following command to check a new file called `README.md` and a `.g
 ls -la
 ```
 
-#### STEP 4: Introduce a new commit with a purposedly intended error
+### STEP 4: Introduce a new commit with a purposedly intended error
 
 Check the content of README.md. Next, we will purposedly make a commit with a typo with a following line change. Open up your `README.md` and add this line at the end of the file then save.
 
@@ -106,7 +106,7 @@ And then you can run the following command to make a commit.
 git add README.md && git commit -m "Purposedly making a typo"
 ```
 
-#### STEP 5: Amend the previously wrong commit with git amend
+### STEP 5: Amend the previously wrong commit with git amend
 
 Obviously, you know it is not **git reset** that is the correct answer. So, we want to change that word to **git revert**. Run `git log` command to verify our last commit id. You may want to take a screenshot just to compare later. Then, modify your `README.md` file and fix the wording from `git reset` to `git revert`. Then, run the following commands in sequence.
 

@@ -1,4 +1,4 @@
-## Let's learn fun git bisect
+# Let's learn fun git bisect
 
 ![image](https://user-images.githubusercontent.com/5396174/187117321-7cb8adce-c4de-4e4f-a2d7-4f207da42b01.png)
 
@@ -10,7 +10,7 @@ Git bisect is an useful built-in tool within git cli that you lets you search a 
 - When there is a performance degrade or improvement but have no idea how to trace back
 
 
-### How can you get started with git bisect?
+## How can you get started with git bisect?
 
 1. You start with `git bisect start` to activate git bisect. Now, fun begins!
 2. Run `git bisect bad <SHA ID>` where you expect somewhere after a change got introduced

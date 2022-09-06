@@ -1,4 +1,4 @@
-## Git Rebase with Squash
+# Git Rebase with Squash
 
 
 

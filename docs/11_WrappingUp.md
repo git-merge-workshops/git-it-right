@@ -1,4 +1,4 @@
-## Wrapping up with this course
+# Wrapping up with this course
 
 Congratulation on finishing this workshop. Hope you learned something new and had fun! Don't miss out other two workshops presented by my awesome coworkers.
 
