@@ -94,7 +94,7 @@ Then, run the following command to check a new file called `README.md` and a `.g
 ls -la
 ```
 
-### STEP 4: Introduce a new commit with a purposedly intended error
+#### STEP 4: Introduce a new commit with a purposedly intended error
 
 Check the content of README.md. Next, we will purposedly make a commit with a typo with a following line change. Open up your `README.md` and add this line at the end of the file then save.
 
@@ -106,7 +106,7 @@ And then you can run the following command to make a commit.
 git add README.md && git commit -m "Purposedly making a typo"
 ```
 
-### STEP 5: Amend the previously wrong commit with git amend
+#### STEP 5: Amend the previously wrong commit with git amend
 
 Obviously, you know it is not **git reset** that is the correct answer. So, we want to change that word to **git revert**. Run `git log` command to verify our last commit id. You may want to take a screenshot just to compare later. Then, modify your `README.md` file and fix the wording from `git reset` to `git revert`. Then, run the following commands in sequence.
 
