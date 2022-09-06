@@ -2,6 +2,9 @@
 
 `git rebase` enables you to modify your commit history in a variety of ways. For example, you can use it to reorder commits, edit them, squash multiple commits into one, and much more.
 
+![image](https://user-images.githubusercontent.com/5396174/188719783-3788edc0-0caa-40cb-a0ae-56c336f69a7c.png)
+
+
 To enable all of this, rebase comes in several forms. In this section, we will explore basic rebase, rebase with interactive option, and rebase with squash.
 
 Why would you want to use `git rebase`? The goal of rebase is similar to that of `git merge`: they are both trying to integrate one branch to another. Now, if you are using web based git platforms like GitHub, GitLab, or BitBucket, you are maybe familiar with the concept of **Pull Requests** or **Merge Requests**. `git merge` or `git rebase` provides a similar way to merge one branch with another but through a plain simple git way. 
