@@ -13,7 +13,7 @@ Welcome. In this workshop, participants will learn the basics of common Git comm
 2. [**Warm up** - Brushing up on basic git commands](docs/2_Brushing_Up_Git_Commands.md)
 3. [**Undoing git commit** - Let's explore how git revert, git commit --amend, git soft reset, and git hard reset differ](docs/3_Undoing_Git_Commit.md)
 4. [**Git Revert** - Simplest and safest way to revert commit](docs/4_GitRevert_With_Exercise.md)
-5. [**Git Commit Amend** - Let's fix an existing commit](docs/5_GitCommitAmmend_With_Exercise.md)
+5. [**Git Commit Amend** - Let's fix an existing commit](docs/5_GitCommitAmend_With_Exercise.md)
 6. [**Git Cherry Pick** - How to pick that specific commit then bring it to my other branch](docs/6_GitCherryPick_With_Exercise.md)
 7. [**Git Rebase and Git Squash** - How to merge one branch into another and learn what git squash is](docs/7_GitRebase_And_Squash_With_Exercise.md)
 8. [**Git Reset** - Dangerous but powerful operations to change git history](docs/8_GitReset_With_Exercise.md)
