@@ -82,7 +82,7 @@ git add $README_FILE && git commit -m "Adding some more description"
 Run the following command to execute the script
 
 ```bash
-./generate-git-single-branch
+./generate-git-single-branch.sh
 ```
 
 Then, run the following command to check a new file called `README.md` and a `.git` directory got created.
