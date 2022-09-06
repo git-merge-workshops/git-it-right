@@ -1,6 +1,6 @@
-# Learn different ways to undo or change git commits
+# Learn different ways to undo or to change git commits
 
-![image](https://user-images.githubusercontent.com/5396174/169838055-e2ac5ba2-dd75-4c89-a13a-dfec0da8ccb6.png)
+![back2thefuture](https://user-images.githubusercontent.com/5396174/188551977-be6e5031-6e67-4d3a-b411-b0fb23dd4b0a.jpg)
 
 In this section and following sections, we will learn about different git commands that re-write history and understand when you should or shouldn't use them.
 
