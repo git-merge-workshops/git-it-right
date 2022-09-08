@@ -221,7 +221,12 @@ pick ac0e74c Added main under Test.java
 ...
 ```
 
-If you delete any of line starting with `pick`, then only other commits will be rebased. Other options are interesting, but we will try to use `git squash`. What is **Git Squash**? Git squash is a way to combine multiple commits into one or few commits during a process like git rebase. Let's try to squash 2nd and 3rd commits into first one. Your change should look like this.
+If you delete any of line starting with `pick`, then only other commits will be rebased. Other options are interesting, but we will try to use `git squash`. What is **Git Squash**? 
+
+![squash](https://user-images.githubusercontent.com/5396174/189036329-bce0e3b7-c35b-4445-aaa8-eea5f27f101a.jpg)
+
+
+Git squash is a way to combine multiple commits into one or few commits during a process like git rebase. Let's try to squash 2nd and 3rd commits into first one. Your change should look like this.
 
 ```bash
 pick 1016ffb Added a new file called Test.java
