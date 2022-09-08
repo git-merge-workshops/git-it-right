@@ -2,6 +2,8 @@
 
 **Git reset** is the command that we want to use when we want to move the repository back to a previous commit, throwing all changes made after that specific commit. Git reset comes in three forms: `soft`, `mixed`, and `hard`. By default, if you don't specify anything, it is `mixed`.
 
+![image](https://user-images.githubusercontent.com/5396174/189043666-d29cd802-e256-4aad-a7a5-d96e9a2e3624.png)
+
 To properly understand different modes of how `git reset` works, it is essential to know git's three ways to store states: `working directory`, `staging`, and `commit history`. 
 
 1. **Working Directory**: By default, when you create, delete, or modify files, that will go into working directory stage
@@ -12,6 +14,9 @@ Now, combining those ideas, here are how different modes of `git reset` differ:
 - `git reset --soft` can revert back what happened in commit history but don't touch what is in **working directory** or **staging**
 - `git reset --mixed` or `git reset` can revert back what is in staging and commit history, but does not change files that were modified
 - `git reset --hard` basically revert back everything including files that are changed.
+
+![image](https://user-images.githubusercontent.com/5396174/189043752-871dc855-1cae-4879-a86a-e66f54687e7e.png)
+
 
 And you can see, `git reset --hard` is the most dangerous operation, so use it very sparingly.
 
