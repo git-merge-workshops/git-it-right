@@ -1,6 +1,14 @@
 # Git basic workflows 
 
-Although you can work most changes within GitHub itself, it is highly recommended to get to know how git works by knowing some of most basic git workflow process. There are Git user interface tools for your desktop like GitHub Desktop, Git Kraken, but you can operate everything out from just git CLI. Here are few commands that are essential to know.
+Although you can work most changes within GitHub itself, it is highly recommended to get to know how git works by knowing some of most basic git workflow process.
+
+In git workflow, files can be in one of three states:
+
+1. **Modified:** When you modify a file, the change will only be found in the working tree
+2. **Staged:** You must then stage the changes with `git add` command if you want to include them in your next commit
+3. **Committed**: After you staged your files, you can commit them with `git commit` command to put them under **git commit history** state
+
+There are Git user interface tools for your desktop like **GitHub Desktop** or **Git Kraken**, but you can operate everything out from just git CLI. Here are few commands that are essential to know.
 
 ```sh
 # Pull from the current checked out branch in remote repository
