@@ -10,7 +10,10 @@ git pull
 git checkout [branch name] 
 
 # Create a new branch from source branch
-git checkout -b [new branch name] [source branch] 
+git checkout -b [new branch name] [source branch]
+
+# Similar to checkout
+git switch [branch_name]
 
 # Check for any change
 git status
@@ -20,6 +23,9 @@ git add .
 
 # Add files in selective ways
 git add file_name1 file_name2
+
+# Restore changed file that was modified
+git restore file_name1
 
 # Add files to commit with a message
 git commit -m "Some commit message"

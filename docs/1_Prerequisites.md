@@ -21,13 +21,17 @@ $ git --version
 git version 2.11.0
 ```
 
-In general, we recommend you stay within two minor versions of the [latest version](https://git-scm.com/downloads) of Git. The minor version is the second number in the series `x.x.x`.
+If you are using **Windows**, you can download **git-scm** from [this git-scm download page](https://git-scm.com/downloads). Once you installed git-cli, you can follow following steps:
+1. Click bottom left Windows button
+2. Type to search **git cli**
+3. Select Git CLI
+4. Now, you can use this CLI window to perform pretty much all basic Linux/UNIX commands like `ls`, `mkdir`, or run shell scripts
 
 We suggest having version [2.29.2](https://github.com/git-for-windows/git/releases/tag/v2.29.2.windows.2) or more recent if you're using Git for Windows or Git Bash.
 
 ### Downloading and Installing Git
 
-If you don't already have Git installed, you can download Git at www.git-scm.com.
+If you don't already have Git installed, you can download Git at [**www.git-scm.com**](https://www.git-scm.com).
 
 If you need additional assistance installing Git, you can find more information in [the ProGit chapter on installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -54,21 +58,7 @@ You can use almost any text editor, but we have the best success with the follow
 - Notepad++
 - GitPad
 
-If you do not already have a text editor installed, go ahead and download and install one of the above editors now! You can also configure Atom as your default text editor for Git commands using the [instructions at docs.github.com](https://docs.github.com/github/using-git/associating-text-editors-with-git).
-
-### Your Editor on the Command Line
-
-After you have installed an editor, confirm you can open it from the command line.
-
-If installed properly, the following command will open the Atom text editor:
-
-```sh
-atom .
-```
-
-_**Note:** If you are working on a Mac, you will need to Install Shell Commands from the Atom menu, this happens as part of the installation process for Windows._
-
----
+If you do not already have a text editor installed, go ahead and download and install one of the above editors now!
 
 ## Congratulation. You are done with "Prerequisite" section
 
