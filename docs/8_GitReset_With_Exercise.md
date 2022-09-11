@@ -162,15 +162,80 @@ git log --graph --all
 
 ### STEP 4: Git reset with soft option
 
-Now, you should have two branches: `main` and `test-branch`. We want to switch to `test-branch`
+We will first try to reset our change with `--soft` option. This is the safest operaiton as it will just revert commits. Run the following command to check commit history.
 
 ```bash
-# Check branches
-git branch
-# Checkout to test-branch
-git checkout test-branch
+git log --graph --all
 ```
 
+Copy the commit id right below the top most one. It should say `Closed main function under Main.java` as its commit message. Then, type in the following command.
+
+```bash
+git reset --soft <SHA ID you copied from>
+```
+
+Run `git log --graph --all` again. You should see that top most commit got removed. However, if you check your file with the following two commands, you should see that `Main.java` is not in staged state while its content is unaffected.
+
+```bash
+# Check status of git state
+git status
+# Check content of Main.java
+```
+
+### STEP 5: Git reset with default option, which is mixed
+
+Let's now try to run with `--mixed` option, which is also default `git reset` option. Before that, type `git log --graph --all` again to see git history. Again, copy commit id right below the top most one. It should say with a commit message `Added a sample print statement under Main.java`. Then, type in the following command.
+
+```bash
+git reset <SHA ID you copied from> 
+```
+
+or `git reset --soft <SHA ID you copied from>`
+
+You should see a following message.
+
+```bash
+Unstaged changes after reset:
+M	Main.java
+```
+
+Check your file status with few commands.
+
+```bash
+# Check that commit id is gone
+git log --graph --all
+# Check that Main.java file is now unstaged
+git status
+# Check that file content did not get affected
+cat Main.java
+```
+
+### STEP 5: Git reset with hard option
+
+Now, we are going to do most destructive operation: `git reset --hard`. Use this with a high caution because it can remove all changes you made. Again, run `git log --graph --all` again to see your git history. Since this is a last exercise, you can technically pick anything other than top most one. But if you followed a same approach, you will pick one with a commit message `Added main under Main.java`. Copy its git commit id. Then, run the following command.
+
+```bash
+git reset --hard <<SHA ID you copied from>
+```
+
+Then, you will see a message like this.
+
+```bash
+HEAD is now at 9a1ab03 Added main under Main.java
+```
+
+Check few things again like last time.
+
+```bash
+# Check that commit id is gone
+git log --graph --all
+# Check that Main.java file is now unstaged
+git status
+# Check that file content got changed!
+cat Main.java
+```
+
+Main difference about this command is that it actually modifed your file contents. Because of this, you should exactly know what you are doing with `git hard --reset` option.
 
 ## Congratulation. You are done with "Git Reset with Exercise" section
 
