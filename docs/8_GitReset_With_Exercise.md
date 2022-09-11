@@ -180,6 +180,7 @@ Run `git log --graph --all` again. You should see that top most commit got remov
 # Check status of git state
 git status
 # Check content of Main.java
+cat Main.java
 ```
 
 ### STEP 5: Git reset with default option, which is mixed
@@ -190,7 +191,7 @@ Let's now try to run with `--mixed` option, which is also default `git reset` op
 git reset <SHA ID you copied from> 
 ```
 
-or `git reset --soft <SHA ID you copied from>`
+or `git reset --mixed <SHA ID you copied from>`
 
 You should see a following message.
 
@@ -229,13 +230,13 @@ Check few things again like last time.
 ```bash
 # Check that commit id is gone
 git log --graph --all
-# Check that Main.java file is now unstaged
+# Check nothing is staged
 git status
 # Check that file content got changed!
 cat Main.java
 ```
 
-Main difference about this command is that it actually modifed your file contents. Because of this, you should exactly know what you are doing with `git hard --reset` option.
+Main difference about this command is that it actually modifed your file contents. Because of this, you should exactly know what you are doing with `git reset --hard` option.
 
 ## Congratulation. You are done with "Git Reset with Exercise" section
 
