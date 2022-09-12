@@ -113,7 +113,7 @@ Obviously, you know it is not **git reset** that is the correct answer. So, we w
 ```bash
 # Add to staging
 git add README.md
-# git commit --amend -m "Adding an explanation about git revert"
+git commit --amend -m "Adding an explanation about git revert"
 ```
 
 If you run that, you can check the status by running these commands.

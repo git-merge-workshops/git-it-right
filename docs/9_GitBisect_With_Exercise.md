@@ -100,7 +100,7 @@ git add $FILE && git commit -m "Add seventh sentence"
 This should have initialized a basic git structure and created a new file called `book-harry-potter.md`. You can check with the following commands.
 
 ```bash
-# Check files to chekc .git and book-harry-potter.md
+# Check files to check .git and book-harry-potter.md
 ls -la
 # Check git commit history
 git log --graph --all
@@ -116,6 +116,8 @@ Then, use this command to make a commit.
 git add book-harry-potter.md
 git commit -m "Adding some malicious change"
 ```
+
+> In this example, we made it really obvious what is a bad change. However, in real world, it will be not so obvious.
 
 ### STEP 4: Run the second script generate remaining commits
 
@@ -151,9 +153,87 @@ Then, execute the file with `./post-generate-git-bisect.sh` command.
 
 Check, your commit status.
 
+```bash
+# Check git commit history
+git log --graph --all
+# Check content of updated book-harry-potter.md
+cat book-harry-potter.md
+```
 
+We now have everything ready to run our git bisect search.
 
+### STEP 5: Search a bad commit through git bisect
 
+To start, run the following command.
+
+```bash
+git bisect start
+```
+
+This will trigger git bisect mode, which will split our git log into two do binary search. Next, we need to mark two commits: a bad commit and a good commit. To mark a good commit, you need to find out where you believe a commit id that did not have a malicious commit. For us, we will mark the very first commit. It should say with a message `Title`
+
+```bash
+# Mark a good commit
+git bisect good <Last know good commit SHA ID>
+```
+
+This should print out  amessage like 
+
+```bash
+Bisecting: 6 revisions left to test after this (roughly 3 steps)
+[be88cc1c090ab114bdd79193256fc29f01d1ebe5] Add sixth sentence
+```
+
+Next, we need to mark a bad commit. Let's pick the very top one.
+
+```bash
+# Mark a bad commit
+git bisect bad <Last known bad commit SHA ID>
+```
+
+This should print a message like the following.
+
+```bash
+Bisecting: 6 revisions left to test after this (roughly 3 steps)
+[be88cc1c090ab114bdd79193256fc29f01d1ebe5] Add sixth sentence
+```
+
+Let's check our file `book-harry-potter.md` file by opening with either `cat book-harry-potter.md` or a text editor. You should not see an error. So, we will type `git bisect good`.
+
+You should see a message like this, and we did not yet find the culprit.
+
+```bash
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[cf4333d93020d4a33dbd1751dee8de3ce50cea8c] Adding some harry potter book change
+```
+
+Now, if you open `book-harry-potter.md` to see its content, you should see it has a malicious commit. Type `git bisect bad` this time. You should then see a message like this.
+
+```bash
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[7df8ad9dfa2d657e6c309974af900eebc77492f2] Adding some malicious change
+```
+
+Aha! This is where a bad commit happens. We can check our content of `book-harry-potter.md` as well. 
+
+We can then modify our file `book-harry-potter.md` to either fix it or remove the line, but we will do in next step. For now, copy the commit id where you discover that malicious change.
+
+Get out from git bisect mode by typing the following command.
+
+```bash
+git bisect reset
+```
+
+### STEP 6: Fix the change
+
+There should be a number of different ways to fix the problematic line, but we will try to delete that line. Modify your  `book-harry-potter.md` to remove the line. Then, type the following command.
+
+```bash
+git add book-harry-potter.md
+git commit -m "Removing that malicious change"
+```
+
+Now, your file is fixed!
 
 ## Congratulation. You are done with "Git Bisect with Exercise" section
 
