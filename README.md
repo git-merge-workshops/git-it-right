@@ -18,5 +18,4 @@ Welcome. In this workshop, participants will learn the basics of common Git comm
 7. [**Git Rebase and Git Squash** - How to merge one branch into another and learn what git squash is](docs/7_GitRebase_And_Squash_With_Exercise.md)
 8. [**Git Reset** - Dangerous but powerful operations to change git history](docs/8_GitReset_With_Exercise.md)
 9. [**Git Bisect** - Very useful built-in tool to use binary search to find that problematic commit](docs/9_GitBisect_With_Exercise.md)
-10. [**Extra Bonus - Migrate everything about git** - Learn how you can treat any git repository to migrate from one to another](docs/10_ExtraTopic_GitMigrate.md)
-11. [**Wrapping Up** - Where to go from here and little goodbye word](docs/11_WrappingUp.md)
+10. [**Wrapping Up** - Where to go from here and little goodbye word](docs/10_WrappingUp.md)
