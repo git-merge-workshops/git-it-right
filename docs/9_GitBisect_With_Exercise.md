@@ -2,13 +2,11 @@
 
 ![image](https://user-images.githubusercontent.com/5396174/187117321-7cb8adce-c4de-4e4f-a2d7-4f207da42b01.png)
 
-
 Git bisect is an useful built-in tool within git cli that you lets you search a specific commit through binary search. Following shows some situations when git bisect is handy:
 
 - When you found a bug but have no idea when it was introduced
 - When a new feature got introduced but have no idea how to trace back
 - When there is a performance degrade or improvement but have no idea how to trace back
-
 
 ## How can you get started with git bisect?
 
@@ -130,23 +128,23 @@ FILE=book-harry-potter.md
 
 echo "At Hogwarts the three friends are all placed into the Gryffindor house. Harry has a knack for the school sport, Quidditch, and is recruited onto the Gryffindor team as its star Seeker." >> $FILE
 
-git add $FILE && git commit -m "Adding some harry potter book change"
+git add $FILE && git commit -m "Add eighth sentence"
 
 echo "Perusing the restricted section in the library, Harry discovers that the Sorcerer's Stone produces the Elixir of Life, which gives its drinker the gift of immortality" >> $FILE
 
-git add $FILE && git commit -m "Adding some more change"
+git add $FILE && git commit -m "Add ninth sentence"
 
 echo "After realizing that Voldemort might be after the stone, Albus Dumbledore had it moved it to Hogwarts for safekeeping." >> $FILE
 
-git add $FILE && git commit -m "Adding some more change to the book"
+git add $FILE && git commit -m "Add tenth sentence"
 
 echo "Harry finds out that when she died, Lily Potter transferred to her son an ancient magical protection from Voldemort's lethal spell" >> $FILE
 
-git add $FILE && git commit -m "Adding few more description"
+git add $FILE && git commit -m "Add eleventh sentence"
 
 echo "This protection is what allowed Harry as an infant to survive Voldemort's attack. It also helps Harry keep Voldemort from possessing the Stone, which Dumbledore agrees to destroy." >> $FILE
 
-git add $FILE && git commit -m "Add some more change"
+git add $FILE && git commit -m "Add twelveth sentence"
 ```
 
 Then, execute the file with `./post-generate-git-bisect.sh` command.
