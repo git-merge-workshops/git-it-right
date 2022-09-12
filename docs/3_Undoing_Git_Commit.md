@@ -23,10 +23,10 @@ If an operation will change a commit ID that has been pushed to the remote (also
 
 ### Guidelines for Common Commands
 
-| Command | Cautions |
+| Command | What it is |
 | ------- | -------- |
-| `revert`  | Create a new commit |
-| `commit --amend` | Convenient way to modify the most recent commit |
+| `revert`  | Instead of removing an existing commit, it inverts the change by creating a new commit |
+| `commit --amend` | Convenient way to modify the most recent commit by combinig changes with the previous commit |
 | `cherry-pick` | Pick a commit from one branch and apply on another branch |
 | `rebase` and `squash` | Integrate changes from one branch to another |
 | `reset` | Reset your current head to a specified state |
