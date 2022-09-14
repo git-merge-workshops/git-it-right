@@ -96,7 +96,7 @@ ls -la
 Check the content of README.md. Try to add one new line change to `README.md` file. Then, run the following command to commit.
 
 ```bash
-git add $README_FILE && git commit -m "Adding a new change"
+git add README.md && git commit -m "Adding a new change"
 ```
 
 If you type the following command, you should see the history of git.
